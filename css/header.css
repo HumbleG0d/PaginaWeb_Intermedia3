@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 .body {
   background-color: var(--color-backgroud-defect);
+}
+
+.header {
+  font-family: "Inter", sans-serif;
 }
 
 .li {
@@ -77,6 +83,18 @@
 
 .dropdown__li {
   margin-top: 10px;
+}
+
+.a__style:hover {
+  color: var(--color-text3-darkmode);
+}
+
+.a__sign {
+  font-weight: 800;
+}
+
+.a__style-1:hover {
+  color: var(--color-hover);
 }
 
 @media screen and (min-width: 960px) {
