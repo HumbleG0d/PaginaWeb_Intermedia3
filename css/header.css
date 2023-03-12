@@ -123,3 +123,46 @@
     align-items: center;
   }
 }
+
+.nav__div__search {
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.searh__nav-diagonal {
+  margin-left: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.search__span {
+  padding: 5px;
+  color: var(--color-text6);
+}
+
+.search__input {
+  width: 140px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--color-backgroud-defect);
+  color: var(--color-text3-darkmode);
+}
+
+.search__input::placeholder {
+  color: var(--color-text6);
+}
+
+@media screen and (min-width: 1280px) {
+  .li__lup {
+    display: none;
+  }
+
+  .nav__div__search {
+    display: flex;
+  }
+
+  .nav__div-login {
+    width: 500px;
+    justify-content: space-evenly;
+  }
+}
