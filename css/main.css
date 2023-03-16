@@ -393,6 +393,11 @@
   border: 2px solid var(--color-border2);
 }
 
+.section7__icon__h3 {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 960px) {
   .section1__span-1 {
     display: none;
