@@ -288,7 +288,7 @@
 /**Section5*/
 .section5 {
   margin-top: 2.5rem;
-  height: 100vh;
+  height: auto;
 }
 
 .section5__icons {
@@ -315,11 +315,48 @@
   padding: 40px;
 }
 
-/* .section5__dats--flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+/**Section6*/
+.section6 {
+  margin-top: 2.5rem;
+  height: auto;
+}
+
+.div__p {
+  color: var(--color-text4-darkmode);
+}
+
+.section6__img {
+  background-image: url(https://res.cloudinary.com/deox9ahvl/image/upload/v1678630291/PaginaWeb_Intermedio3/images/home-audience-dark-46cd048fe72c1d8c2d151347556090c8dff4472e0c445c0cb221a83776bd3c08_dttxrw.webp);
+  background-size: cover;
+  background-position: right center;
+  height: 50vh;
+}
+
+.section6__dats {
+  padding: 10px 40px;
+}
+
+.section6__dats--grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto max-content;
+  grid-template-areas:
+    "section6__h1--grid"
+    "section6__p--grid";
+}
+
+.section6__h1--grid {
+  grid-area: section6__h1--grid;
+}
+
+.section6__p--grid {
+  grid-area: section6__p--grid;
+}
+
+.section6__p {
+  font-size: var(--step7-1);
+  color: var(--color-text1-darkmode);
+}
 
 @media screen and (min-width: 960px) {
   .section1__span-1 {
@@ -360,6 +397,19 @@
   /**Section5*/
   .section5__icons--flex {
     flex-wrap: nowrap;
+  }
+
+  /**Section6*/
+  .section6__dats--grid {
+    grid-template-columns: 600px;
+    grid-template-rows: auto max-content;
+    grid-template-areas:
+      "section6__h1--grid"
+      "section6__p--grid";
+  }
+
+  .section6__img {
+    height: 70vh;
   }
 }
 
@@ -459,5 +509,10 @@
 
   .section5__h1--flex {
     margin-left: 300px;
+  }
+
+  /**Section6*/
+  .section6__dats {
+    padding: 10px 330px;
   }
 }
