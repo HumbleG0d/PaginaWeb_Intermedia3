@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+.footer {
+  margin-top: 2.5rem;
+  height: auto;
+}
+
+.page__footer {
+  font-family: "Inter", sans-serif;
+}
+
+.div__footer {
+  background-color: var(--color-background2-defect);
+  color: var(--color-text4-darkmode);
+  padding: 30px 50px;
+}
+
+.div__footer--grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "footer__ul--1 footer__ul--2 footer__ul--3"
+    "footer__ul--4 footer__input footer__input";
+  gap: 1.25rem 0;
+}
+
+.footer__ul--1 {
+  grid-area: footer__ul--1;
+}
+
+.footer__ul--2 {
+  grid-area: footer__ul--2;
+}
+
+.footer__ul--3 {
+  grid-area: footer__ul--3;
+}
+
+.footer__ul--4 {
+  grid-area: footer__ul--4;
+}
+
+.footer__input {
+  grid-area: footer__input;
+}
+
+.footer__h3 {
+  font-size: var(--step7--1);
+}
+
+.ul__footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__a {
+  margin-top: 1.125rem;
+}
+
+.ul__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem 0;
+}
+
+.div__search--style {
+  border: 0.0625rem solid var(--color-border);
+  background-color: var(--color-background2-defect);
+  color: var(--color-text3-darkmode);
+  border-radius: 0.3125rem;
+  padding: 0.3125rem 0.625rem;
+}
+
+.input::placeholder {
+  color: var(--color-text4-darkmode);
+}
+
+@media screen and (min-width: 960px) {
+  .div__footer--grid {
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: "footer__ul--1 footer__ul--2 footer__ul--3 footer__ul--4 footer__input";
+    gap: 0 1.25rem;
+  }
+}
